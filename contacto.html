@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+     <title>My | Website</title>
+    <!--LINKS SECTION -- STYLE -- BOOTSTRAP -- JQUERY-->
+       <link rel="stylesheet"  href="styles/style_index.css">
+       <link rel="stylesheet"  href="boot/css/bootstrap.min.css">
+       <script src="jQuery/jquery-3.2.1.min.js"></script>
+       <script src="boot/js/bootstrap.min.js"></script>
+       <link rel="icon"  href="pictures/coding-1294373_640.png" type="image/x.icon">
+    <!--STYLE SECTION-->
+       <style>
+           .row{        
+                margin-left: 0;
+                margin-right: 0;
+               }
+           body{
+               
+               font-family: monospace;
+                background-color:#dcdde1;
+                margin: 0 10px;
+                
+              
+               }
+           margen{
+               margin: 5px;
+           }
+           
+           textarea{
+               resize: none;
+           }
+           
+           .map{
+               font-size: 40px;
+               padding-top: 190px;
+           }
+            .google-maps {
+        position: relative;
+        padding-top: 450px; 
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+           
+       </style>
+    </head>
+      <body>
+      <div class="principal">La maravilla de ser un programador</div>
+         <!--<div class="white" style="height: 1px;"></div>-->
+     
+        <!-- STARTS MAIN NON-DYNAMIC MENU-->
+        <section class="row main hidden-sm hidden-xs" >
+        <div class=" col-md-1"></div>
+        <div class=" col-md-1"></div>
+            <div class="main_options col-md-2 center links"><a href="index.html" style="text-decoration: none;color: white;">|Principal|</a></div>
+            <div class="main_options col-md-2 center"><a href="mihistoria.html" style="text-decoration: none;color: white;">|Mi histoia|</a></div>
+            <div class="main_options col-md-2 center"><a href="loquehago.html" style="text-decoration: none;color: white;">|Lo que hago|</a></div>
+            <div class="main_options col-md-2 center"><a href="contacto.html" style="text-decoration: none;color: white;">|Contacto|</a></div>
+        <div class=" col-md-1"></div>
+        <div class=" col-md-1"></div>
+        </section>
+        <!-- STARTS MAIN NON-DYNAMIC MENU-->
+        
+        <!--STARTS MAIN DYNAMIC MENU-->
+              <section class=" hidden-md hidden-lg">
+            <div style="text-align: left;background-color:#222f3e;
+">
+                <div class="white" style="height: 1px;"></div> 
+                <img src="pictures/boton.png" style="width: 35px" class="boton-resp-1">
+               
+            </div>
+                  
+                  <div class="row  menuopciones center boton-resp-2">
+               
+                      <div class="col-sm-12 col-xs-12 black opciones"><a href="index.html" style="text-decoration: none;color: white;">Principal</a></div>
+                
+                      <div class="col-sm-12 col-xs-12 black opciones"><a href="mihistoria.html" style="text-decoration: none;color: white;">Mi historia</a></div>
+                
+                <div class="col-sm-12 col-xs-12 black opciones"><a href="loquehago.html" style="text-decoration: none;color: white;">Lo que hago</a></div>
+                
+                      <div class="col-sm-12 col-xs-12 black opciones"><a href="contacto.html" style="text-decoration: none;color: white;">Contacto</a></div>
+                
+            </div>
+                  
+        </section>
+        
+        <!--ENDS MAIN DYNAMIC MENU-->
+        
+        <div style="height:10px;"></div>
+          
+         <section class="row contenedores">
+          
+             <div class="col-md-12 center">
+             <h3>¡Contáctame!</h3> 
+            <p>Tienes alguna duda, sugerencia, inquietud, o simplemente deseas conocer mas acerca de este magnifico mundo de la programación, no dudes en usar el formulario de abajo. </p>
+                 <hr/>
+             </div>
+             
+            <!--CONTACT FORM-->
+             <div class="col-md-4 col-sm-12 col-xs-12 "></div>
+             <div class="col-md-4 col-sm-12 col-xs-12 center">
+                 <form action="respuesta_formulario.php" method="post" autocomplete="off" >
+             <input type="text" name="input_name" placeholder="Nombre" 
+            class="form-control center" autofocus required><br>
+             <input type="number" name="input_age" placeholder="Edad"   class="form-control center"  required><br>
+                     
+            	<label>Sexo:</label><br>
+			<input type="radio" name="input_gender" value="Hombre" id="gender_male" checked>
+                     <label for="gender_male">Hombre</label>
+            <input type="radio" name="gender" value="Mujer"
+            id="gender_female">
+                     <label for="gender_female">Mujer</label>
+            <br><br>
+                     
+             <input type="email" name="input_email"     class="form-control center" placeholder="Correo"  required><br>
+             <input type="tel" name="input_telephone" class="form-control center" placeholder="Telefono" required><br>
+             <textarea name="input_comments" placeholder="Comentarios"
+             class="form-control center" rows="7"  required></textarea>
+                     <br>
+             <button class="btn  btn-success">Enviar</button>
+                <br>
+                <br>
+                </form>     
+             </div>
+             <div class="col-md-4 "></div>    
+          </section> 
+          
+          <div style="height:10px;"></div>
+                <!--MAP (GOOGLE-MAPS) HIDDEN SMALL AND XTRASMALL SCREEN-->
+          <section class="row contenedores hidden-sm hidden-xs">
+              
+              <!--LEFT SIDE: DESCRPTION-->
+          <div class="col-md-5 center">
+              <p class="map">¡Ven y conocenos en persona!</p>
+              <h3>Paseo de la Reforma
+Ciudad de México, CDMX</h3>
+          </div>
+              
+          
+              <!--RIGHT SIDE: MAP-->
+          <div class="col-md-7 col-sm-12 col-xs-12 google-maps">
+              
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.1452644871556!2d-99.19476469696359!3d19.42547473145972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201dc1b5f6d75%3A0xf73ab32f5c6c4fee!2sPaseo+de+la+Reforma%2C+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1sen!2smx!4v1534819758002" width="1085" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>  
+                  
+          </section>
+          
+          
+           <!--MAP (GOOGLE-MAPS) HIDDEN LARGE AND MEDIUM SCREEN-->
+          <section class="row contenedores hidden-lg hidden-md">
+              
+              <!--LEFT SIDE: DESCRPTION-->
+          <div class="col-sm-12 col-xs-12 center ">
+              <h2>¡Ven y conocenos en persona!</h2>
+              <p>Paseo de la Reforma
+Ciudad de México, CDMX</p>
+              <hr/>
+          </div>
+              
+          
+              <!--RIGHT SIDE: MAP-->
+          <div class=" col-sm-12 col-xs-12 google-maps ">
+              
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.1452644871556!2d-99.19476469696359!3d19.42547473145972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201dc1b5f6d75%3A0xf73ab32f5c6c4fee!2sPaseo+de+la+Reforma%2C+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1sen!2smx!4v1534819758002" width="1085" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>  
+                  
+          </section>
+          
+          
+          
+          
+          
+        <div style="height:10px;"></div>  
+      <!-- FOOTER SECTION -->
+        
+        <footer>
+        Todos los derechos reservados &copy; 2018. | Consulta nuestro aviso de <a href="javascript:abrir('aviso_privacidad.html')" style="text-decoration: underline;color: white;">privacidad aqui</a>
+        </footer>    
+          
+          
+    <!-- SCRIPT SECTION -->
+        
+             <script> 
+function abrir(url) { 
+open(url,'','top=200,width=500,height=500') ; 
+} 
+                 
+                 
+ //---SCRIPT DINAMIC MENU---
+        
+        var  flag=1;
+            
+            $(".boton-resp-1").click(function(){
+                  if(flag==1){
+                      $(".boton-resp-2").slideUp(1000);
+                      flag++;
+                  } else{
+                      $(".boton-resp-2").slideDown(1000);
+                      flag--;
+                  }
+            });
+                 
+                 
+                 
+                 $(".contenedor_palabras").slideUp(0);//the menu starts hidden 
+                 
+                 var flag1=1;
+                    $(".boton").click(function(){   
+                    
+                  if(flag1==1){
+                      $(".contenedor_palabras").slideDown(1000);
+                      flag1++;
+                  } else{
+                      $(".contenedor_palabras").slideUp(1000);
+                      flag1--;
+                  }
+            });
+                 
+                $(".boton").ajaxStart 
+                 
+</script>       
+    
+     </body>
+</html>
