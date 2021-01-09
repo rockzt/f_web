@@ -3,7 +3,7 @@
        <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     
-        <title>My | Website</title>
+        <title>My | Web</title>
          <!--LINKS SECTION -- STYLE -- BOOTSTRAP -- JQUERY-->
        <link rel="stylesheet"  href="styles/style_index.css">
        <link rel="stylesheet"  href="boot/css/bootstrap.min.css">
